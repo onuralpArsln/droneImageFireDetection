@@ -24,7 +24,7 @@ while True:
         break  # Video bittiğinde döngüyü sonlandır
 
     # Eğer bu kare, her saniyede bir kareyi temsil ediyorsa
-    if frame_count % frame_rate == 0:
+    if frame_count % (frame_rate*10) == 0:
         frame_filename = os.path.join(output_dir, f"frame_{frame_num}.jpg")
         cv2.imwrite(frame_filename, frame)  # Kareyi kaydet
         frame_num += 1
