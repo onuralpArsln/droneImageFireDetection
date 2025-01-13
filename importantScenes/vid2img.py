@@ -30,7 +30,6 @@ while True:
         frame_num += 1
 
     frame_count += 1
-
 # Video dosyasını kapat
 cap.release()
 print(f"Toplam {frame_num} kare çıkarıldı ve kaydedildi.")
